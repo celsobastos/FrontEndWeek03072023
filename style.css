@@ -1,0 +1,35 @@
+:root {
+    --main-color : #1c0097;
+    --second-color: #35a800;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+}
+
+/* body {
+    box-sizing: border-box;
+} */
+
+.container {
+    border: 1px solid #000;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    border: 1px solid #d00505;
+}
+
+.nav-bar {
+    border: 1px solid #000ac4;
+}
+
+.menu {
+    display: flex;
+}
