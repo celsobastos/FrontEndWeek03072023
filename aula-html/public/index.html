@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pet Shop</title>
+        <meta charset="UTF-8">
+    </head>
+    <body id="front" bgcolor="blue">
+        <header>
+            <nav>
+                Barra de <strong>navegação</strong>
+                <a href="#volei">Volei</a>
+            </nav>
+        </header>
+
+        <!-- Sessão de esporte -->
+        <section>
+            <h1>Esporte</h1>
+            <p>
+                <strong><em>Lorem</em></strong> ipsum dolor sit amet consectetur, adipisicing elit. Totam vitae molestiae quisquam<sup>TM</sup> ex amet, libero labore, illum quae cumque tempora magni laboriosam <del>culpa</del> cum necessitatibus pariatur officia. Blanditiis, autem eveniet!
+            </p>
+        </section>
+        <!-- fim da seção de esporte  -->
+
+        <section id="volei">
+            <h2>Volei</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos minus adipisci, voluptatibus itaque eum. Ut animi reprehenderit necessitatibus, temporibus doloremque ex, fuga obcaecati odio quasi, vel dolor itaque perspiciatis!
+            </p>
+            <div>
+                <a href="../paginas/volei.html"> Leia Mais </a>
+            </div>
+            <div>
+                <a href="https://www.google.com/" target="_blank"> google </a>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Tabela</h2>
+            <table border="1">
+                <tr>
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                </tr>
+                <tr>
+                    <td>Pablo</td>
+                    <td>Rua das Flores, 456</td>
+                    <td>(11) 95225-5852</td>
+                </tr>
+                <tr>
+                    <td>Angelo</td>
+                    <td>Rua das Tamarineiras, 25</td>
+                    <td>(11) 91234-5288</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Lista de Funcionários</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Listas</h2>
+            <h3>Lista não ordenada</h3>
+            <ul>
+                <li>Home page</li>
+                <li>Noticias</li>
+                <li>contatos</li>
+            </ul>
+
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Arroz</li>
+                <li>Batata</li>
+                <li>óleo</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Imagens</h2>
+            <img src="/img/pic_trulli.jpg" alt="tres casas de cor">
+
+            <figure>
+                <img src="/img/pic_trulli.jpg" alt="tres casas de cor">
+                <figcaption>Casas Arbonicas</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Formulário</h2>
+            <form action="../cadastra.html" method="POST">
+                <div>
+                    <label for="nome">  Nome:  </label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div>
+                    <label for="sobrenome">Sobrenome: </label>
+                    <input type="text" id="sobrenome" name="sobrenome">
+                </div>
+
+                <div>
+                    <input type="email" placeholder="Digite seu email" name="email">
+                </div>
+
+                <div>
+                    <input type="password" name="senha">
+                </div>
+
+                <div>
+                    Comentário
+                    <textarea name="comentario" cols="50" rows="10"></textarea>
+                </div>
+
+                <div>
+                     <input type="checkbox" name="ingles" value="ingles"> Inglês
+                     <input type="checkbox" name="japones" value="jajpones"> Japonês
+                </div>
+
+                <div>
+                    <label for="estado">Selecione um estado: </label>
+                    <select name="estado" id="estado">
+                        <option value=""> -- Selecione -- </option>
+                        <option value="sp"> São Paulo </option>
+                        <option value="rj">  Rio de Janeiro </option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Enviar Formulário">
+
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Conteudo Embutido</h2>
+            <iframe src="../paginas/volei.html" frameborder="0"></iframe>
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9549706757293!2d-46.66487005820829!3d-23.57006066940692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59960e28b265%3A0xbb2c8a85342c1a00!2sRestaurante%20Dinho&#39;s!5e0!3m2!1sen!2sbr!4v1688521767107!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/pdLC3l87Ouk" title="Marília Mendonça - O Que Falta Em Você Sou Eu - Decretos Reais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>video</h2>
+            <video controls width="320" height="240">
+                <source src="/videos/movie.ogg" type="video/ogg">
+                <source src="/videos/movie.mp4" type="video/mp4">
+                Seu navegador não suporta videos mpr e ogg
+                clique no link <a href="#">vidoe</a> para ver o video.
+            </video>
+        </section>
+
+        <img src="/img/stanley.gif" alt="">
+        <img src="/img/apple.svg" alt="">
+        <img src="/img/branches.png" alt="">
+
+        <footer>
+            <h2>Entities</h2>
+            <p>
+                Lorem &nbsp;&nbsp;&nbsp;ipsum &lt;h2&gt; dolor, sit amet consectetur adipisicing elit. Quasi blanditiis repellendus reprehenderit illo consequatur saepe quae fuga similique praesentium, reiciendis rerum, sequi consectetur cumque modi<sup>&reg;</sup> ut in natus possimus repellat.
+                &amp;copy
+            </p>
+        </footer>
+    </body>
+</html>
