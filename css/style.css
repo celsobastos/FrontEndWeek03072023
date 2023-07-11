@@ -183,3 +183,23 @@ body {
     width: 150px;
     background-color: #0000ff;
 }
+
+
+.pseudo {
+    border: #000 solid 1px;
+    width: 200px;
+    margin: auto;
+}
+
+/* .pseudo span::after {
+    content: '>';
+    border-right: solid 1px #000;
+    padding-right: 10px;
+} */
+
+
+@media only screen and (max-width: 992px) {
+    .nav-bar {
+        display: none;
+    }
+}
