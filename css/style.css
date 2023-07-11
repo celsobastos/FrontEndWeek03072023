@@ -8,7 +8,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    color: var(--success-color);
+    color: var(--dark-color);
 }
 
 html {
@@ -162,6 +162,7 @@ body {
     border-radius: 50% 20% 10% 20%;
     transition-property: height, background-color, width;
     transition-duration: 500ms, 1s, 500ms;
+    transition-timing-function: ease;
     animation-name: botao;
     animation-duration: 1s;
     animation-iteration-count: infinite;
