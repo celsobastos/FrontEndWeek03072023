@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frame</title>
+    <link rel="stylesheet" href="/css/mycss.css">
 </head>
-<body>
+<body style="margin: 150px;">
     <!-- Table -->
-    <table>
+    <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -39,23 +40,23 @@
       
     <!-- Form -->
     <form action="">
-    <div>
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div>
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
+      <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input class="form-control" type="email" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
     </form>
 
     <!-- Alerts -->
-      <div>
-        A simple primary alert—check it out!
-      </div>
-      <div>
-        A simple secondary alert—check it out!
-      </div>
+    <div class="alert alert-danger">
+      A simple primary alert—check it out!
+    </div>
+    <div class="alert alert-success">
+      A simple secondary alert—check it out!
+    </div>
 
     <!-- bar -->
     <div class="progress">
@@ -63,7 +64,7 @@
     </div>
 
     <!-- Botoes -->
-    <button type="button" >Primary</button>
+    <button type="button" class="btn btn-primary" >Primary</button>
     <button type="button" >Secondary</button>
     <button type="button" >Success</button>
 
