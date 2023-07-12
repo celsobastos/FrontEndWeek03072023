@@ -155,7 +155,7 @@ body {
     font-size: 1.5rem;
 }
 
-.top-bar {
+/* .top-bar {
     color: var(--success-color);
     width: 80px;
     height: 80px;
@@ -176,6 +176,20 @@ body {
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
+}  */
+.top-bar {
+    color: var(--success-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.icon-topbar::after {
+    content: "\f062";
 }
 
 @keyframes botao {
@@ -186,13 +200,6 @@ body {
         bottom: 30px;
     }
 }
-
-.top-bar:hover {
-    height: 150px;
-    width: 150px;
-    background-color: #0000ff;
-}
-
 
 .pseudo {
     border: #000 solid 1px;
@@ -213,6 +220,14 @@ body {
     }
     .container-image-abou {
         display: none;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-coffee {
+        font-size: 3rem;
     }
 }
 

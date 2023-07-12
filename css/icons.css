@@ -6,13 +6,14 @@
 }
 
 .icon-bars {
-    padding: 3px;
-    font-size: 20px;
+    padding: 2px;
     border: transparent;
     border-radius: 2px;
+    width: 50px;
 }
 .icon-bars::after {
     content: "\f0c9";
+    font-size: 1.2rem;
 }
 .icon-bars:hover::after {
     color: #675600;
