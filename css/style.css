@@ -24,12 +24,6 @@ body {
     background-color: var(--success-color);
 }
 
-.container {
-    /* border: 1px solid #000; */
-    width: 100%;
-    height: auto;
-}
-
 .logo {
     /* border: 1px solid #d00505; */
     padding: 10px;
@@ -257,7 +251,7 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     margin: auto;
 }
 
