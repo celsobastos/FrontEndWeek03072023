@@ -5,6 +5,11 @@
     --dark-color: #1B110F;
 }
 
+@font-face {
+    font-family: pepper;
+    src: url(/fonts/pepper-sauce.ttf);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -31,6 +36,7 @@ body {
     font-size: 1.5rem;
     text-transform: uppercase ;
     font-weight: 900;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .nav-bar {
@@ -41,7 +47,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
     position: fixed;
     width: 100%;
     /* background-color: #4f3d39a5; */
@@ -118,6 +123,7 @@ body {
 .main-coffee {
     text-transform: uppercase;
     font-size: 3.5rem;
+    /* font-family: pepper; */
     /* display: none; */
 }
 
@@ -205,12 +211,15 @@ body {
     .nav-bar {
         display: none;
     }
+    .container-image-abou {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .icon-bars {
         display: none;
-    }
+    } 
 }
 
 .format-text {
@@ -231,3 +240,101 @@ body {
     -webkit-opacity: 0.3;
     -ms-opacity: 0.3;
 }
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Format About US */
+.about {
+    padding: 150px;
+}
+.container-image-about {
+    display: flex;
+    justify-content: center;
+}
+.image-about {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-bartop {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 50px;
+}
+
+.about-us {
+    padding: 0 0 5px 0;
+    text-align: center;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+}
+
+.our-story, .our-vision {
+    font-size: 0.6rem;
+    padding: 40px 0 0 0 ;
+}
+
+.about-slogan {
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.our-story h3, .our-vision h3 {
+    color: var(--dark-color);
+    font-size: 1rem;
+    padding-bottom: 18px;
+}
+
+.our-story div p:nth-child(2) {
+    color: var(--secondary-color);
+    padding: 10px 0;
+    font-size: 0.7rem;
+}
+
+.our-story div p:nth-child(3), .our-vision div p {
+    color: #000;
+    padding: 10px 0 20px;
+    font-variant: normal;
+    font-size: 0.6rem;
+    text-rendering: geometricPrecision;
+    text-shadow: 0.001rem 0.001rem 2px var(--dark-color);
+    font-weight: normal;
+    line-height: 0.8rem;
+}
+
+.our-story div a, .our-vision div a  {
+    background-color: var(--secondary-color);
+    display: block;
+    width: 150px;
+    padding: 8px 5px;
+    text-decoration: none;
+    color: var(--success-color);
+    text-align: center;
+}
+
+.our-vision div a {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+.our-vision div ul {
+    list-style-type: none;
+    padding: 0 0 20px 0;
+}
+.our-vision div ul li {
+    line-height: 1rem;
+}
+.our-vision div ul li::before {
+    content: "\f00c";
+    color: var(--primary-color);
+    padding-right: 10px;
+}
+
+
