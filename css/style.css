@@ -44,6 +44,8 @@ body {
     padding: 0 50px;
     position: fixed;
     width: 100%;
+    /* background-color: #4f3d39a5; */
+    background: linear-gradient(to top, rgb(134, 80, 0) 2%, #4d3b007b 20%) ;
 }
 
 .menu-bar {
@@ -200,7 +202,32 @@ body {
 
 
 @media only screen and (max-width: 992px) {
-        .nav-bar {
-            display: none;
-        }
+    .nav-bar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .icon-bars {
+        display: none;
+    }
+}
+
+.format-text {
+    border: 1px solid #000;
+    max-height: 150px;
+    overflow: auto;
+}
+
+.fa-house {
+    font-size: 2rem;
+    background: -webkit-linear-gradient(
+        #0000ff, red
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    opacity: 0.5;
+    -webkit-opacity: 0.3;
+    -ms-opacity: 0.3;
 }

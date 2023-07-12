@@ -5,6 +5,32 @@
     color: rgb(0, 0, 0);
 }
 
+.icon-bars {
+    padding: 3px;
+    font-size: 20px;
+    border: transparent;
+    border-radius: 2px;
+}
+.icon-bars::after {
+    content: "\f0c9";
+}
+.icon-bars:hover::after {
+    color: #675600;
+    cursor: pointer;
+}
+
+a.icon-casa {
+    text-decoration: none;
+}
+.icon-casa::after {
+    content: "\f061";
+    color: #0fff02;
+}
+
+.icon-casa:hover::after {
+    color: #0800ff;
+    padding-left: 5px;
+}
 
 /* Arrow Icon */
 .icon-arrow::after {
