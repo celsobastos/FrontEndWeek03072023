@@ -59,11 +59,30 @@ let tipoPrimitivo = typeof pessoa;
 // b = n + b;
 // b += n;
 
-let salario = Number(prompt('Digite seu salário'));
-let cargo = prompt('Digite seu Cargo');
-salario += salario * 0.1;
-if (cargo == 'gerente') {
-    salario += salario * 0.2;
+
+for (let i = 0; i < 3; i++) {
+    
+    let cargo = prompt('Digite seu Cargo');
+    let confirmacao;
+    if (cargo == '') {
+        // confirmacao = confirm('O cargo é obrigatório, deseja continuar');
+        alert('Ops! cargo obrigatório');
+        continue;
+    }
+    let salario = Number(prompt('Digite seu salário'));
+
+    if (cargo == 'gerente') {
+        salario += salario * 0.2;
+    }
+    else if (cargo == 'diretor') {
+        salario += salario * 0.3;
+    }
+    else if (cargo == 'estagiario') {
+        salario += salario * 0.02;
+    }
+    else {
+        salario += salario * 0.1;
+    }
+    let mensagem = `${cargo}, seu novo salário é ${salario}`;
+    alert(mensagem);
 }
-let mensagem = `Seu novo salário é ${salario}`;
-alert(mensagem);
