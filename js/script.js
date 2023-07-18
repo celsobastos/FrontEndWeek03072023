@@ -59,30 +59,82 @@ let tipoPrimitivo = typeof pessoa;
 // b = n + b;
 // b += n;
 
+// const nomes = ['Cintia', 'Pedro'];
+// const list = ['celso', 'Paula', 'José', 'Maria', 'Pablo'];
 
-for (let i = 0; i < 3; i++) {
+// list.forEach((pessoas) => {
+//     console.log(pessoas);
+// });
+
+// for (let j = 0; j < list.length; j++ ) {
+// debugger;
+//     let pessoas = list[j];
+//     console.log(pessoas);
+// }
+
+function reajusteSalarial() {
+    for (let i = 0; i < 3; i++) {
+        let cargo = prompt('Digite seu Cargo');
+        // let confirmacao;
+        if (cargo == '') {
+            // confirmacao = confirm('O cargo é obrigatório, deseja continuar');
+            alert('Ops! cargo obrigatório');
+            continue;
+        }
+        let salario = Number(prompt('Digite seu salário'));
     
-    let cargo = prompt('Digite seu Cargo');
-    let confirmacao;
-    if (cargo == '') {
-        // confirmacao = confirm('O cargo é obrigatório, deseja continuar');
-        alert('Ops! cargo obrigatório');
-        continue;
+        if (cargo == 'gerente') {
+            salario += salario * 0.2;
+        }
+        else if (cargo == 'diretor') {
+            salario += salario * 0.3;
+        }
+        else if (cargo == 'estagiario') {
+            salario += salario * 0.02;
+        }
+        else {
+            salario += salario * 0.1;
+        }
+        let mensagem = `${cargo}, seu novo salário é ${salario}`;
+        alert(mensagem);
     }
-    let salario = Number(prompt('Digite seu salário'));
-
-    if (cargo == 'gerente') {
-        salario += salario * 0.2;
-    }
-    else if (cargo == 'diretor') {
-        salario += salario * 0.3;
-    }
-    else if (cargo == 'estagiario') {
-        salario += salario * 0.02;
-    }
-    else {
-        salario += salario * 0.1;
-    }
-    let mensagem = `${cargo}, seu novo salário é ${salario}`;
-    alert(mensagem);
 }
+
+// reajusteSalarial();
+
+let aviso = 'função executada...';
+
+function mensagem(msn) {
+    console.log(msn);
+}
+
+function soma(valores) {
+    let soma = 0;
+    valores.forEach(valor => {
+        soma += valor;
+    });
+    return soma;
+}
+let resultado = soma([10, 20, 30, 100, 300]);
+mensagem(`Resultado da soma = ${resultado}`);
+mensagem(soma([10,50]));
+const contagem = valor => valor + 3;
+const contagem1 = function (valor) {
+    return valor + 3
+};
+console.log(contagem(10));
+
+/** Callback function  */
+function conta (callback) {
+    let itensCompra = [10, 50, 20];
+    let total = itensCompra.length;
+    callback(total);
+}
+
+conta(total => {
+    console.log('Compras = ' + total);
+});
+
+
+
+
