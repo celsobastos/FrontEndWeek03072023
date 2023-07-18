@@ -105,7 +105,7 @@ function reajusteSalarial() {
 let aviso = 'função executada...';
 
 function mensagem(msn) {
-    console.log(msn);
+    // console.log(msn);
 }
 
 function soma(valores) {
@@ -122,7 +122,7 @@ const contagem = valor => valor + 3;
 const contagem1 = function (valor) {
     return valor + 3
 };
-console.log(contagem(10));
+// console.log(contagem(10));
 
 /** Callback function  */
 function conta (callback) {
@@ -132,9 +132,48 @@ function conta (callback) {
 }
 
 conta(total => {
-    console.log('Compras = ' + total);
+    // console.log('Compras = ' + total);
 });
 
+/** Objetos */
+let usuario = {
+    nome: 'Amadeu da Silva',
+    login: 'alan',
+    senha: '123456',
+    fullName : function () {
+        return `${this.nome}` 
+    }
+};
 
+// usuario.nome = 'Jonas';
+// console.log(usuario)
+// let numbersTest = [1,2,2];
+// numbersTest.push('3')
+// console.log(numbersTest)
 
+// function cliqueMe() {
+//     alert('test 123456');
+// }
 
+let botao = document.querySelector('.btn');
+// botao.innerHTML = '<strong>Test 123456</strong>';
+// botao.style.backgroundColor = '#0000ff';
+// botao.style.color = '#fff';
+
+// botao.onclick = function () {
+//     // alert('fgsdgsd')
+// }
+
+// let callback = function (event) {
+//     let h1 = document.querySelector('h1');
+//     h1.innerText = 'Novo Conteudo';
+// }
+
+botao.addEventListener('click', event => {
+    let h1 = document.querySelector('h1');
+    h1.classList.add('format');
+    // h1.innerText = 'Novo Conteudo';
+    h1.style.fontSize = '50px'
+});
+
+console.dir(botao);
