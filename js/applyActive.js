@@ -1,0 +1,1 @@
+activeLinks('bar-link', 'active');

@@ -13,3 +13,11 @@
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
   - https://javascript.info/
+
+  - https://www.w3schools.com/
+
+    ## Desafios para varias linguagens
+  - https://leetcode.com/
+
+    ## Desafios
+  - https://codepen.io/login
