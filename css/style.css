@@ -346,4 +346,6 @@ body {
     padding-right: 10px;
 }
 
-
+.error {
+    border: #ff0000 solid 1px;
+}
