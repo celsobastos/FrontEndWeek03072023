@@ -1,5 +1,5 @@
 let usuario = {};
-let dataStorage = localStorage.getItem('usuario');
+let dataStorage = sessionStorage.getItem('usuario');
 if(dataStorage !== null) {
     const inputs = document.querySelectorAll('.form input');
     let userParse = JSON.parse(dataStorage);
@@ -64,7 +64,7 @@ form.addEventListener('submit', event => {
     let errors = valida();
     console.log(errors);
     if(errors.length === 0) {
-        localStorage.setItem('usuario', JSON.stringify(usuario))
+        sessionStorage.setItem('usuario', JSON.stringify(usuario))
         form.submit();
     }
 });
