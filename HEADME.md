@@ -16,8 +16,11 @@
 
   - https://www.w3schools.com/
 
-    ## Desafios para varias linguagens
+  ## Desafios para varias linguagens
   - https://leetcode.com/
 
-    ## Desafios
+  ## Desafios
   - https://codepen.io/login
+
+  ## Teste de expressão Regular
+  - https://regexr.com/

@@ -346,6 +346,81 @@ body {
     padding-right: 10px;
 }
 
+/* Form */
+
+ul {
+    list-style-type: none;
+    padding: 0 0 20px 0;
+}
+.icon-checked::before{
+    content: "\f00c";
+    color: var(--primary-color);
+    padding-right: 10px;
+}
+
+.desconto {
+    font-size: 0.7rem;
+    padding: 80px 50px;
+}
+
+.desconto > h2,
+.desconto > p,
+.desconto > h3 {
+    padding: 10px 0;
+}
+
+.desconto > h2 {
+    color: var(--primary-color);
+}
+
+.back-desc {
+    background-image: url(/images/bg.jpg);
+    background-size: 60%;
+    color: var(--success-color);
+}
+
+.back-desc .row{
+    background-color: #1b110fdd;
+}
+
+.formulario {
+    background-color: #1b110fe6;
+    height: 100%;
+    /* margin-left: 100px; */
+    padding: 80px 50px;
+}
+
+.formulario input{
+    border: var(--primary-color) 1px solid;
+    background-color: #00000000 !important;
+    padding: 12px;
+    width: 100%;
+    color: #6f6f6f;
+    margin: 5px 0;
+    font-size: 0.5rem;
+}
+
+.formulario button{
+    border: var(--primary-color) 1px solid;
+    background-color: var(--primary-color);
+    padding: 12px;
+    width: 100%;
+    color: #000000;
+    margin: 5px 0;
+    font-size: 0.5rem;
+    cursor: pointer;
+}
+
+section {
+    margin: 50px 0;
+}
+
+/* End form */
+
 .error {
-    border: #ff0000 solid 1px;
+    border: #ff0000 solid 1px !important;
+}
+
+.error:focus {
+    outline: #d10000 solid 1px !important;
 }
