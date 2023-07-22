@@ -23,7 +23,7 @@
         <div class="menu">
             <div class="logo">koppee</div>
             <button class="icon-bars"></button>
-            <nav class="nav-bar">
+            <nav class="nav-bar active-mobile">
                 <ul class="menu-bar">
                     <li class="item-list"><a href="#" class="bar-link active">Home</a></li>
                     <li class="item-list"><a href="#" class="bar-link">About</a></li>
@@ -123,7 +123,19 @@
         </div>
     </section>
 
-    <footer>
+    <section>
+        <form>
+            <div>
+            Cep:<input class="cep" type="text" name="cep">
+            </div>
+            <div>
+            Logradouro: <input type="text" name="logradouro">
+            </div>
+            <input type="submit" value="enviar" class="form-ajax">
+        </form>
+    </section>
+
+    <footer style="margin: 100px 0;">
     </footer>
 
     <div class="contatos-now">
@@ -143,5 +155,6 @@
     <script src="js/dados-offline.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/display-menu.js"></script>
+    <script src="js/ajax.js"></script>
 </body>
 </html>

@@ -65,6 +65,7 @@ form.addEventListener('submit', event => {
     console.log(errors);
     if(errors.length === 0) {
         sessionStorage.setItem('usuario', JSON.stringify(usuario))
+        console.log('enviado com sucesso');
         form.submit();
     }
 });
