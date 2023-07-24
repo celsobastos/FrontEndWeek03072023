@@ -124,7 +124,7 @@
     </section>
 
     <section>
-        <form>
+        <form action="">
             <div>
             Cep:<input class="cep" type="text" name="cep">
             </div>
@@ -132,6 +132,18 @@
             Logradouro: <input type="text" name="logradouro">
             </div>
             <input type="submit" value="enviar" class="form-ajax">
+        </form>
+    </section>
+
+    <section>
+        <form action="http://localhost:3002/form" method="POST">
+            <div>
+            Cep:<input type="text" name="cep">
+            </div>
+            <div>
+            Logradouro: <input type="text" name="logradouro">
+            </div>
+            <input type="submit" value="enviar">
         </form>
     </section>
 
