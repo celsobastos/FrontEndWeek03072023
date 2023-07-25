@@ -24,3 +24,11 @@
 
   ## Teste de expressão Regular
   - https://regexr.com/
+
+  ## Plugin carrosel
+  https://kenwheeler.github.io/slick/
+
+  ## Plugin mask
+  https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html
+
+  
